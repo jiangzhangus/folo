@@ -2,9 +2,9 @@ package com.folo.service;
 
 import com.folo.dao.RoleDao;
 import com.folo.entity.Role;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,7 +15,7 @@ import java.util.Optional;
 @Service
 public class RoleService {
 
-    @Autowired
+    @Inject
     private RoleDao roleDao;
 
     public Optional<Role> getRoleById(int roleId) {

@@ -1,15 +1,13 @@
 package com.folo.web;
 
 import com.folo.entity.Role;
-import com.folo.entity.User;
 import com.folo.service.RoleService;
-import com.folo.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,7 +20,7 @@ import java.util.Optional;
 
 public class RoleController {
 
-    @Autowired
+    @Inject
     RoleService roleService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)

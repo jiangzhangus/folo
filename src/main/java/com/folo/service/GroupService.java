@@ -2,9 +2,9 @@ package com.folo.service;
 
 import com.folo.dao.GroupDao;
 import com.folo.entity.Group;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +14,7 @@ import java.util.Optional;
 @Service
 public class GroupService {
 
-    @Autowired
+    @Inject
     private GroupDao groupDao;
 
     public Optional<Group> getGroupById(int groupId) {

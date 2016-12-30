@@ -1,15 +1,15 @@
 package com.folo.dao;
 
 import com.folo.entity.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import javax.inject.Inject;
 import java.sql.*;
 import java.util.List;
 import java.util.Optional;
@@ -18,10 +18,10 @@ import java.util.Optional;
  * Created by jiang on 12/25/2016.
  * Data access layer that interact with database using SQL
  */
-@Component
+@Repository
 public class UserDao {
 
-    @Autowired
+    @Inject
     private JdbcTemplate jdbcTemplate;
 
     // internal mapper class that converts a db result into a User object.

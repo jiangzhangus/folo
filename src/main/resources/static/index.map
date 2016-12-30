@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../sass/index.css",
+	"sources": [
+		"../sass/index.scss"
+	],
+	"sourcesContent": [
+		"$font-stack:    Helvetica, sans-serif;\r\n$primary-color: #333;\r\n\r\nbody {\r\n  padding-top: 50px;\r\n  color: $primary-color;\r\n}\r\n\r\n.div_container { .div_content {\r\n  padding: 40px 15px;\r\n  text-align: center;\r\n  }\r\n}"
+	],
+	"mappings": ";AAGA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,IAAK;EAClB,KAAK,EAJS,IAAI;CAKnB;;;AAED,AAAiB,cAAH,CAAG,YAAY,CAAC;EAC5B,OAAO,EAAE,SAAU;EACnB,UAAU,EAAE,MAAO;CAClB",
+	"names": []
+}

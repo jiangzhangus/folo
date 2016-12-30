@@ -4,7 +4,6 @@ import com.folo.entity.Role;
 import com.folo.service.RoleService;
 import org.junit.*;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -18,8 +17,6 @@ import static org.junit.Assert.assertEquals;
 @WebAppConfiguration
 public class FoloApplicationTests {
 
-//    @Autowired
-//    private RoleService roleService;
 
     @BeforeClass
     public static void beforeClass() {

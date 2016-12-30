@@ -4,9 +4,9 @@ import com.folo.dao.RoleDao;
 import com.folo.dao.UserDao;
 import com.folo.entity.Role;
 import com.folo.entity.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -15,10 +15,11 @@ import java.util.Optional;
  */
 @Service
 public class UserService {
-    @Autowired
+
+    @Inject
     private UserDao userDao;
 
-    @Autowired
+    @Inject
     private RoleDao roleDao;
 
     public Optional<User> getUserById(int userId) {

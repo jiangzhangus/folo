@@ -2,9 +2,9 @@ package com.folo.service;
 
 import com.folo.dao.MessageDao;
 import com.folo.entity.Message;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -14,7 +14,7 @@ import java.util.Optional;
 @Service
 public class MessageService {
 
-    @Autowired
+    @Inject
     private MessageDao messageDao;
 
     public Optional<Message> getMessageById(int messageId) {

@@ -1,12 +1,12 @@
 package com.folo.dao;
 
 import com.folo.entity.Message;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
+import javax.inject.Inject;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -18,10 +18,10 @@ import java.util.Optional;
  * Message is a kind of resource that can be shared to other users.
  * user can share a message to another user or a group of users.
  */
-@Component
+@Repository
 public class MessageDao {
 
-    @Autowired
+    @Inject
     private JdbcTemplate jdbcTemplate; // inject the JdbcTemplate object
 
     // internal mapper class that converts a db result into an message object.
